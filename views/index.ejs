@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+<h1>Insert User Info</h1>
+<button><a href="/create" style="text-decoration: none;">add user</a></button><br><br>
+<table border="2">
+    <tr>
+
+        <th>firstname</th>
+        <th>middlename</th>
+        <th>lastname</th>
+        <th>birthdate</th>
+
+    </tr>
+    <tr>
+        <% data.forEach(info =>{ %>
+            
+        <td><%= info.firstname %></td>
+        <td><%= info.middlename %></td>
+        <td><%= info.lastname %></td>
+        <td><%= info.birthdate %></td>
+
+    </tr>       
+    <% }) %>
+</table>
+ </body>
+ </html>
